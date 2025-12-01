@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { useRouter } from "next/navigation";
 
 export default function AuthPage() {
   const [activeTab, setActiveTab] = useState<"login" | "signup">("login");
@@ -10,11 +11,13 @@ export default function AuthPage() {
     password: "",
   });
 
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    console.log("Form submitted:", { activeTab, formData });
-    // Add your authentication logic here
-  };
+ const router = useRouter();
+
+const handleSubmit = (e: React.FormEvent) => {
+  e.preventDefault();
+  // After successful auth:
+  router.push("/bookings");
+}; 
 
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     setFormData({
