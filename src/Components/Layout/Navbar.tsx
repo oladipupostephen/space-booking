@@ -13,49 +13,49 @@ export default function Navbar() {
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <Link href="/" className="flex items-center space-x-2">
-            <div className="w-10 h-10 bg-blue-600 rounded-lg flex items-center justify-center">
-              <MapPin className="w-6 h-6 text-white" />
-            </div>
-            <span className="text-xl font-bold text-gray-900">SeatBook</span>
+            <span className="text-xl font-bold" style={{ color: "#CCFF00" }}> NITHUB</span>
+
           </Link>
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
             <Link
               href="#features"
-              className="text-gray-700 hover:text-blue-600 transition-colors font-medium">
+              className="text-gray-700 hover:text-lime-400 transition-colors font-medium">
               Features
             </Link>
             <Link
               href="#pricing"
-              className="text-gray-700 hover:text-blue-600 transition-colors font-medium">
+              className="text-gray-700 hover:text-lime-400 transition-colors font-medium">
               Pricing
             </Link>
             <Link
               href="#about"
-              className="text-gray-700 hover:text-blue-600 transition-colors font-medium">
+              className="text-gray-700 hover:text-lime-400 transition-colors font-medium">
               About
             </Link>
             <Link
               href="#contact"
-              className="text-gray-700 hover:text-blue-600 transition-colors font-medium">
+              className="text-gray-700 hover:text-lime-400 transition-colors font-medium">
               Contact
             </Link>
           </div>
 
           {/* Desktop Login Button */}
-          <div className="hidden md:block">
-            <Link
-              href="/auth"
-              className="px-6 py-2 text-gray-700 font-medium hover:text-blue-600 transition-colors mr-2 inline-block">
-              Login
-            </Link>
-            <Link
-              href="/auth"
-              className="px-6 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors font-medium inline-block">
-              Sign Up
-            </Link>
-          </div>
+         <Link
+  href="/auth"
+  className="px-6 py-2 text-gray-900 font-medium mr-2 inline-block rounded-lg"
+  style={{ backgroundColor: "#CCFF00" }}>
+  Login
+</Link>
+
+<Link
+  href="/auth"
+  className="px-6 py-2 text-gray-900 rounded-lg font-medium inline-block"
+  style={{ backgroundColor: "#CCFF00" }}>
+  Sign Up
+</Link>
+
 
           {/* Mobile menu button */}
           <div className="md:hidden">
@@ -78,22 +78,22 @@ export default function Navbar() {
           <div className="px-4 py-3 space-y-3">
             <Link
               href="#features"
-              className="block text-gray-700 hover:text-blue-600 font-medium">
+              className="block text-gray-700 hover:text-lime-400 font-medium">
               Features
             </Link>
             <Link
               href="#pricing"
-              className="block text-gray-700 hover:text-blue-600 font-medium">
+              className="block text-gray-700 hover:text-lime-400 font-medium">
               Pricing
             </Link>
             <Link
               href="#about"
-              className="block text-gray-700 hover:text-blue-600 font-medium">
+              className="block text-gray-700 hover:text-lime-400 font-medium">
               About
             </Link>
             <Link
               href="#contact"
-              className="block text-gray-700 hover:text-blue-600 font-medium">
+              className="block text-gray-700 hover:text-lime-400 font-medium">
               Contact
             </Link>
             <div className="pt-3 border-t border-gray-200 space-y-2">
@@ -104,7 +104,7 @@ export default function Navbar() {
               </Link>
               <Link
                 href="/auth"
-                className="block w-full px-6 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors font-medium text-center">
+                className="block w-full px-6 py-2 bg-lime-400 text-white rounded-lg hover:bg-lime-700 transition-colors font-medium text-center">
                 Sign Up
               </Link>
             </div>

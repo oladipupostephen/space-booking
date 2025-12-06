@@ -10,7 +10,7 @@ export default function Footer() {
           </div>
           <span className="text-lg font-bold text-gray-900">SeatBook</span>
         </div>
-        <p className="text-gray-600">© 2025 SeatBook. All rights reserved.</p>
+        <p className="text-gray-600">© 2025 NITHUB. All rights reserved.</p>
       </div>
     </footer>
   );
